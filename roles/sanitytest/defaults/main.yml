@@ -1,0 +1,7 @@
+---
+# defaults file for iperf
+iperf_project: iperf3
+# defaults file for sanity
+ocp_version: 4
+ocp_version: 3
+storage_class: thin

@@ -1,0 +1,4 @@
+---
+
+routerfqdn: "console.apps.openshift.ocp3.rhevdemo.com" #for OCP3
+masterapifqdn: "console-openshift-console.apps.ocp43-test.sales.lab.tlv.redhat.com" #for OCP4

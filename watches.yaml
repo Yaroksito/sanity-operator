@@ -1,0 +1,5 @@
+---
+- version: v1alpha1
+  group: sanity.test.com
+  kind: SanityTest
+  role: /opt/ansible/roles/sanitytest

@@ -1,0 +1,23 @@
+---
+# tasks file for sanitytest
+- name: start sanitytest
+  k8s:
+    definition:
+      kind: Deployment
+      apiVersion: apps/v1
+      metadata:
+        name: '{{ meta.name }}-sanity'
+        namespace: '{{ meta.namespace }}'
+      spec:
+      replicas: "{{size}}"
+      selector:
+        matchLabels:
+          app: sanitytest
+      template:
+        metadata:
+        labels:
+          app: sanitytest
+        spec:
+          containers:
+          - name: ocpsanity
+            image: quay.io/ypery/sanity-operator

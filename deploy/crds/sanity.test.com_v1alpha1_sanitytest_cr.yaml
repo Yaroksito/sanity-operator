@@ -1,0 +1,19 @@
+apiVersion: sanity.test.com/v1alpha1
+kind: SanityTest
+metadata:
+  name: example-sanitytest
+  namespace: sanity-operator
+spec:
+  trashold:
+    warning: "600m"
+    critical: "500m"
+  # Add fields here
+  #kubeConfig: "~/.kube/config"
+  #Command: "oc version | grep Server | cut -f3 -d' ' | cut -f1 -d'.'"
+  #iperfTest: true
+  #projectName: {{}}
+  #ocpTest: true
+  #ocpVersion: 4
+  #testCertificate: true
+  #cronSpec: "* * * * /5"
+  #image:
